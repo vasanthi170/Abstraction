@@ -1,0 +1,19 @@
+from abc import ABC,abstractmethod
+class RE(ABC):
+    @abstractmethod
+    def engine(self):
+        pass
+    def gears(self):
+        print('5 gears')
+class classic(RE):
+    def engine(self):
+        print('350cc')
+class GT(RE):
+    def engine(self):
+        print('650cc')
+class himalayan(RE):
+    def engine(self):
+        print('452cc')
+obj = classic()
+obj.engine()
+obj.gears()
